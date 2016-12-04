@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_graphs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pinkhat.pinkhat.GraphsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1200px"
+        android:orientation="vertical"
+        android:id="@+id/l2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MannKind Corporation (MNKD)"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/s1"
+            android:id="@+id/imageView" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/l2"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/butHome"
+        android:background="@drawable/home" />
+
+    <Button
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:id="@+id/butGraph"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/butHome"
+        android:layout_below="@+id/l2"
+        android:background="@drawable/graph" />
+
+    <Button
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:id="@+id/butNews"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/butGraph"
+        android:layout_below="@+id/l2"
+        android:background="@drawable/news" />
+
+    <Button
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:id="@+id/butSettings"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/butNews"
+        android:layout_below="@+id/l2"
+        android:background="@drawable/settings2" />
+
+</RelativeLayout>

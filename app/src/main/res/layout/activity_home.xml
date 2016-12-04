@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pinkhat.pinkhat.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/l1"
+        android:elevation="24dp"
+        android:layout_height="1200px">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/showdescriptiontitle"
+            android:text="Call Financial Analyst "
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/support"
+            />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Pink Hat Penny Stock Analysis"
+            android:textAlignment="center"
+            android:ems="10"
+            android:id="@+id/editText6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/showdescriptiontitle"
+            android:text="Aspen Group, Inc. $0.3"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="14dp"
+            app:srcCompat="@drawable/up"
+            android:id="@+id/imageView2"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/showdescriptiontitle"
+                android:text="Nephros, Inc. (NEPH) $0.44"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="14dp"
+                app:srcCompat="@drawable/up"
+                android:id="@+id/imageView2"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/showdescriptiontitle"
+                android:text="International Isotopes Inc. $0.78"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="14dp"
+                app:srcCompat="@drawable/up"
+                android:id="@+id/imageView2"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/showdescriptiontitle"
+                android:text="Zafgen, Inc. (ZFGN) $1.2"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="14dp"
+                app:srcCompat="@drawable/up"
+                android:id="@+id/imageView2"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/l1"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/butHome"
+        android:background="@drawable/home" />
+
+    <Button
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:id="@+id/butGraph"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/butHome"
+        android:layout_below="@+id/l1"
+        android:background="@drawable/graph" />
+
+    <Button
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:id="@+id/butNews"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/butGraph"
+        android:layout_below="@+id/l1"
+        android:background="@drawable/news" />
+
+    <Button
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:id="@+id/butSettings"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/butNews"
+        android:layout_below="@+id/l1"
+        android:background="@drawable/settings2" />
+
+</RelativeLayout>
